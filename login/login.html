@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="https://whirl.netlify.app/">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" href="/asset/img/logofavicon.png" type="image/x-icon" />
+    <title>Đăng Nhập or Đăng Kí</title>
+</head>
+<body>
+    
+    <div class="container modal js-modal">
+        <div class="forms modal-container js-modal-container">
+            <div class="form login">
+                <span class="title">Đăng Nhập</span>
+
+                <form action="/index.html">
+                    <div class="input-field">
+                        <input type="text" placeholder="Nhập email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Nhập Mật Khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Nhớ Mật Khẩu</label>
+                        </div>
+                        
+                        <a href="#" class="text">Quên Mật khẩu?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <a href="/index.html"><input type="submit" value="Đăng Nhập"></a>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">thành viên?
+                        <a href="#" class="text signup-link">Đăng Kí </a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Đăng KÍ</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Nhập tên của bạn" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Nhập email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Nhập Mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Nhập Lại Mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Bạn có đồng ý với các điều khoản của tôi không</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Đăng Kí">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Đã là thành viên?
+                        <a href="#" class="text login-link">Đăng Nhập</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-container">
+        <img src="https://i.gifer.com/Vp3R.gif" alt="">
+    </div>
+      
+    <script src="login.js"></script>
+</body>
+</html>
